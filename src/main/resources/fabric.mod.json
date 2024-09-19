@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "pilgrims-progress",
+	"version": "${version}",
+	"name": "Pilgrims Progress",
+	"description": "This is not an example to tell what the mod is about, why would you think that",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pilgrims-progress/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"pilgrims.progress.PilgrimsProgress"
+		],
+		"client": [
+			"pilgrims.progress.PilgrimsProgressClient"
+		],
+		"fabric-datagen": [
+			"pilgrims.progress.PilgrimsProgressDataGenerator"
+		]
+	},
+	"mixins": [
+		"pilgrims-progress.mixins.json",
+		{
+			"config": "pilgrims-progress.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
