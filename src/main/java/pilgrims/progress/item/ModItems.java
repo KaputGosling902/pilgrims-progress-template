@@ -1,4 +1,4 @@
-package pilgrims.progress.Item;
+package pilgrims.progress.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
